@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Форма отзыва</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="page-header">
@@ -39,56 +40,56 @@
         <fieldset class="form__group review-form__personal-info">
           <legend class="form__group-name">Представьтесь</legend>
           <label for="name">Имя*:</label>
-          <input type="text" name="name" id="name" placeholder="Петр">
+          <input class="form__field" type="text" name="name" id="name" placeholder="Петр">
           <label for="surname">Фамилия*:</label>
-          <input type="text" name="surname" id="surname" placeholder="Иванов">
+          <input class="form__field" type="text" name="surname" id="surname" placeholder="Иванов">
           <label for="patronymic">Отчество*:</label>
-          <input type="text" name="patronymic" id="patronymic" placeholder="Александрович">
+          <input class="form__field" type="text" name="patronymic" id="patronymic" placeholder="Александрович">
         </fieldset>
         <fieldset class="form__group review-form__contacts">
           <legend class="form__group-name">Контактная информация</legend>
           <label for="tel">Контактный телефон*:</label>
-          <input type="tel" name="tel" id="tel" placeholder="Введите телефон">
+          <input class="form__field" type="tel" name="tel" id="tel" placeholder="Введите телефон">
           <label for="email">Электронная почта*:</label>
-          <input type="email" name="email" id="email" placeholder="Введите e-mail">
+          <input class="form__field" type="email" name="email" id="email" placeholder="Введите e-mail">
         </fieldset>
         <fieldset class="form__group review-form__impress">
           <legend class="form__group-name">Ваше общее впечатление</legend>
-          <label>
-            <input type="radio" name="impress" value="Скорее положительно" checked>
+          <label class="form__label-radio">
+            <input class="form__input-radio" type="radio" name="impress" value="Скорее положительно" checked>
             Скорее положительно
           </label>
-          <label>
-            <input type="radio" name="impress" value="Скорее отрицательно">
+          <label class="form__label-radio">
+            <input class="form__input-radio" type="radio" name="impress" value="Скорее отрицательно">
             Скорее отрицательно
           </label>
-          <label>
-            <input type="radio" name="impress" value="Затрудняюсь ответить">
+          <label class="form__label-radio">
+            <input class="form__input-radio" type="radio" name="impress" value="Затрудняюсь ответить">
             Затрудняюсь ответить
           </label>
         </fieldset>
         <fieldset class="form__group review-form__sights">
           <legend class="form__group-name">Посещенные достопримечательности</legend>
-          <label>
-            <input type="checkbox" name="sights" value="Мост Дьявола" checked>
+          <label class="form__label-checkbox">
+            <input class="form__input-checkbox" type="checkbox" name="sights" value="Мост Дьявола" checked>
             Мост Дьявола
           </label>
-          <label>
-            <input type="checkbox" name="sights" value="Гора-Колокол" checked>
+          <label class="form__label-checkbox">
+            <input class="form__input-checkbox" type="checkbox" name="sights" value="Гора-Колокол" checked>
             Гора-Колокол
           </label>
-          <label>
-            <input type="checkbox" name="sights" value="Слайд-парк" checked>
+          <label class="form__label-checkbox">
+            <input class="form__input-checkbox" type="checkbox" name="sights" value="Слайд-парк" checked>
             Слайд-парк
           </label>
-          <label>
-            <input type="checkbox" name="sights" value="Красные скалы">
+          <label class="form__label-checkbox">
+            <input class="form__input-checkbox" type="checkbox" name="sights" value="Красные скалы">
             Красные скалы
           </label>
         </fieldset>
         <fieldset class="form__group review-form__emotion">
           <legend class="form__group-name">Опишите свои эмоции</legend>
-          <textarea placeholder="Опишите подробно все свои восторги"></textarea>
+          <textarea class="form__field" placeholder="Опишите подробно все свои восторги"></textarea>
         </fieldset>
         <button class="review-form__button button">Отправить отзыв</button>
       </form>
