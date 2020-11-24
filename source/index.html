@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Седона</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="page-header">
@@ -35,21 +36,19 @@
           <img class="banner__title-img" src="https://via.placeholder.com/150x150">
         </p>
       </section>
-      <section class="page-preview">
-        <div class="preview">
+      <section class="reasons">
+        <div class="preview reasons__preview">
           <p class="preview__title">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
           <p class="preview__description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         </div>
-      </section>
-      <section class="reasons">
         <ul class="reasons__list">
           <li class="reasons__item reason">
-            <div class="reason__main">
+            <div class="reason__main reason__main--bright">
               <h3 class="reason__title">Настоящий городок</h3>
               <span class="reason__num">-№1-</span>
               <p class="reason__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
             </div>
-            <div class="reason__advantages advantages">
+            <div class="advantages reason__advantages">
               <ul class="advantages__list">
                 <li class="advantages__item">
                   <h3 class="advantages__title">Жилье</h3>
@@ -67,7 +66,7 @@
             </div>
           </li>
           <li class="reasons__item reason">
-            <div class="reason__main">
+            <div class="reason__main reason__main--bright">
               <h3 class="reason__title">Там есть мост дьявола</h3>
               <span class="reason__num">-№2-</span>
               <p class="reason__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
@@ -96,21 +95,21 @@
           </li>
         </ul>
       </section>
-      <section class="search-hotel">
-        <div class="search-hotel__wrapper">
-          <span class="search-hotel__slogan">Заинтересовались?</span>
-          <p class="search-hotel__content">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <button class="search-hotel__button button">Найти гостиницу</button>
+      <section class="location">
+        <div class="preview location__preview">
+          <p class="preview__title">Заинтересовались?</p>
+          <p class="preview__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <button class="preview__button button">Найти гостиницу</button>
         </div>
-      </section>
-      <section class="map">
-        <img class="map__img" src="https://via.placeholder.com/150x150">
+        <div class="location__map map">
+          <img class="map__img" src="https://via.placeholder.com/150x150">
+        </div>
       </section>
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <span class="hashtag">#visitsedona</span>
-        <ul class="social">
+        <span class="footer__hashtag">#visitsedona</span>
+        <ul class="page-footer__social social">
           <li class="social__item">
             <a class="social__link social__link--twitter" href=""></a>
           </li>
@@ -121,7 +120,7 @@
             <a class="social__link social__link--youtub" href=""></a>
           </li>
         </ul>
-        <span class="copyright">Разработано</span>
+        <span class="page-footer__copyright">Разработано</span>
       </div>
     </footer>
   </body>
