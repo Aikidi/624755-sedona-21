@@ -1,5 +1,36 @@
 @import "../global/variables.less";
 
+.reason {
+  display: flex;
+  flex-direction: column;
+}
+
+.reason__image-wrapper {
+  height: 260px;
+  background-color: @lightgrey;
+
+  @media (min-width: 768px) {
+    width: 517px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 800px;
+  }
+}
+
+.reasons__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
 .reason__title {
   font-size: 21px;
   line-height: 15px;
@@ -7,6 +38,8 @@
 }
 
 .reason__main {
+  min-height: 191px;
+  text-align: center;
   background-color: @lightgrey;
   color: @black;
 
@@ -14,4 +47,22 @@
     background-color: @blue;
     color: @white;
   }
+
+  @media (min-width: 768px) {
+    width: 256px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 400px;
+  }
+}
+
+.reason__top {
+  @media (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.reason__image {
+  object-fit: cover;
 }
