@@ -1,5 +1,43 @@
+@import "../global/variables.less";
+
+.form {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.form__group {
+  border: none;
+  border-top: 1px solid #e5e5e5;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.review-form__impress {
+  @media (min-width: 768px) {
+    width: 49%;
+    order: -1;
+  }
+}
+
+.review-form__personal-info {
+  @media (min-width: 768px) {
+    width: 49%;
+  }
+}
+
 .form__group-name {
   font-weight: bold;
+
+  &--center {
+    text-align: center;
+  }
 }
 
 .form__field {
