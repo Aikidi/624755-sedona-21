@@ -4,9 +4,15 @@
   list-style: none;
 
   @media (min-width: 768px) {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     text-align: center;
+  }
+}
+
+.advantages__item {
+  @media (min-width: 768px) {
+    min-height: 330px;
   }
 }
 
