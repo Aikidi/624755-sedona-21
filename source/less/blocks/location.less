@@ -3,3 +3,51 @@
   background-image: url("../img/map.jpg");
   background-repeat: no-repeat;
 }
+
+.location__preview {
+  padding-bottom: 50px;
+  padding-right: 20px;
+  padding-left: 20px;
+  min-width: 280px;
+  max-width: 458px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    padding-top: 56px;
+    padding-bottom: 58px;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 65px;
+  }
+}
+
+.location__preview .preview__title {
+  font-size: 21px;
+  margin-bottom: 21px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    margin-bottom: 33px;
+  }
+}
+
+.location__preview .preview__description {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.location__button {
+  margin-top: 28px;
+  width: 100%;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 38px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 45px;
+  }
+}

@@ -2,8 +2,6 @@
 
 .social {
   list-style: none;
-  margin: 0;
-  padding: 0;
   display: flex;
   justify-content: center;
 }
@@ -14,7 +12,29 @@
 
 .social__link {
   display: block;
-  width: 48px;
-  height: 48px;
+  width: 46px;
+  height: 47px;
   background-color: @blue;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+
+  &--twitter {
+    background-image: url("../img/icon-twitter.svg");
+  }
+
+  &--fb {
+    background-image: url("../img/icon-facebook.svg");
+  }
+
+  &--youtub {
+    background-image: url("../img/icon-youtube.svg");
+  }
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+  }
 }
