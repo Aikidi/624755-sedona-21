@@ -2,15 +2,48 @@
 
 .page-header {
   position: relative;
-  min-height: 56px;
-
   background-color: @white;
+}
+
+.header__top {
+  min-height: 56px;
 }
 
 .page-header__logo {
   position: absolute;
-  display: block;
-  width: 100%;
-  text-align: center;
   z-index: 1;
+  top: 0;
+  left: 50%;
+  width: 102px;
+  margin-left: -51px;
+  text-align: center;
+
+  @media (min-width: @desktop-width) {
+    width: 188px;
+    margin-left: -94px;
+  }
+}
+
+.page-header__logo-img {
+  &--desctop {
+    display: none;
+
+    @media (min-width: @desktop-width) {
+      display: block;
+    }
+  }
+
+  &--tablet {
+    display: none;
+
+    @media (min-width: @tablet-width) and (max-width: 1199px) {
+      display: block;
+    }
+  }
+
+  &--mobile {
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+  }
 }
