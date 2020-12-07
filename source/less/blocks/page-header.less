@@ -10,13 +10,19 @@
 }
 
 .page-header__logo {
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  left: 50%;
+  display: block;
   width: 102px;
-  margin-left: -51px;
-  text-align: center;
+  height: 56px;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 50%;
+    width: 102px;
+    margin-left: -51px;
+    text-align: center;
+  }
 
   @media (min-width: @desktop-width) {
     width: 188px;
@@ -25,6 +31,13 @@
 }
 
 .page-header__logo-img {
+  @media (max-width: @mobile-width-only) {
+    z-index: 2;
+    position: absolute;
+    left: 50%;
+    margin-left: -51px;
+  }
+
   &--desctop {
     display: none;
 
