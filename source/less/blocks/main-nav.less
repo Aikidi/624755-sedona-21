@@ -12,6 +12,7 @@
   @media (min-width: @tablet-width) {
     flex-direction: row;
     justify-content: space-around;
+    flex-wrap: wrap;
   }
 }
 
@@ -138,3 +139,21 @@
 .main-nav--nojs .main-nav__toggle {
   display: none;
 }
+
+
+.main-nav__item {
+  @media (min-width: @tablet-width) {
+    width: 20%;
+    text-align: center;
+
+    &:nth-child(4n+2) {
+      margin-right: 10%;
+    }
+
+    &:nth-child(4n+3) {
+      margin-left: 10%;
+    }
+  }
+}
+
+
