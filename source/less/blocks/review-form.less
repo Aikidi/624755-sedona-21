@@ -1,0 +1,269 @@
+@import "../global/variables.less";
+
+.review-form {
+  @media (min-width: @tablet-width) {
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-right: 120px;
+    padding-left: 120px;
+  }
+}
+
+.review-form__impress {
+  padding-bottom: 16px;
+
+  @media (min-width: @tablet-width) {
+    width: 50%;
+    order: -1;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 3px;
+  }
+}
+
+.review-form__impress .form__group-name {
+  @media (min-width: @tablet-width) {
+    margin-bottom: 48px;
+    text-align: left;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 76px;
+  }
+}
+
+.review-form__personal-info .form__group-name {
+  @media (min-width: @tablet-width) {
+    margin-bottom: 48px;
+    text-align: left;
+  }
+}
+
+.review-form__personal-info {
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    width: 50%;
+    padding-left: 58px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 80px;
+  }
+
+  &::before {
+    @media (max-width: @mobile-width-only) {
+      display: none;
+    }
+
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 22px;
+    width: 1px;
+    height: 84%;
+    background-color: #dbdbdb;
+  }
+}
+
+.review-form__personal-info .form__label {
+  margin-bottom: 20px;
+}
+
+.review-form__personal-info .form__field {
+  margin-left: 15px;
+}
+
+.review-form__sights .form__group-name {
+  top: 15px;
+  margin-bottom: 8px;
+  text-align: center;
+
+  &::before {
+    top: 50%;
+  }
+
+  &::after {
+    top: 50%;
+  }
+}
+
+.review-form__emotion {
+  border-bottom: none;
+}
+
+.review-form__emotion .form__group-name {
+  margin-bottom: 9px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 50px;
+  }
+}
+
+.review-form__sights {
+  padding-bottom: 3px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    padding-bottom: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 18px;
+  }
+}
+
+.review-form__sights-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 23px;
+    justify-content: center;
+    padding-left: 64px;
+
+    @media (min-width: @desktop-width) {
+      padding-left: 0;
+      justify-content: space-between;
+    }
+  }
+}
+
+.review-form__sights-item {
+  display: flex;
+
+  @media (min-width: @tablet-width) {
+    min-width: 260px;
+    margin-bottom: 8px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 100px;
+  }
+}
+
+.review-form__contacts {
+  padding-bottom: 15px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 17px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 15px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+  }
+}
+
+.review-form__contacts-wrapper {
+  @media (min-width: @desktop-width) {
+    display: flex;
+  }
+}
+
+.review-form__contacts-item {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    width: 50%;
+    align-items: baseline;
+  }
+}
+
+.review-form__contacts .form__label {
+  margin-left: 22px;
+  margin-bottom: 8px;
+
+  @media (min-width: @desktop-width) {
+    margin-left: 0;
+    margin-right: 16px;
+  }
+}
+
+.review-form__contacts .form__field {
+  margin-bottom: 13px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 22px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 315px;
+  }
+
+  &:focus {
+    box-sizing: border-box;
+    outline: 4px solid #e5e5e5;
+    outline-offset: -4px;
+    background-color: @white;
+  }
+}
+
+.review-form__contacts .form__group-name {
+  margin-bottom: 9px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 13px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 65px;
+  }
+}
+
+.review-form__bottom {
+  display: flex;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 45px;
+  padding-bottom: 38px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 50px;
+    padding-bottom: 60px;
+    width: 100%;
+    align-items: baseline;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 65px;
+  }
+}
+
+.review-form__button {
+  padding-top: 19px;
+  padding-bottom: 13px;
+  width: 100%;
+
+  @media (min-width: @tablet-width) {
+    width: 50%;
+    padding-left: 5px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 15px;
+  }
+}
+
+.review-form__mark {
+  margin-left: auto;
+  font-size: 14px;
+  line-height: 26px;
+
+  @media (max-width: @mobile-width-only) {
+    display: none;
+  }
+}
