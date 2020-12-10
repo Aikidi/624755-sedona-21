@@ -18,16 +18,31 @@
   background-repeat: no-repeat;
   background-position: 50% 50%;
 
+  &::before {
+    content: "";
+    position: absolute;
+    width: 46px;
+    height: 47px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
   &--twitter {
-    background-image: url("../img/icon-twitter.svg");
+    &::before {
+      background-image: url("../img/icon-twitter.svg");
+    }
   }
 
   &--fb {
-    background-image: url("../img/icon-facebook.svg");
+    &::before {
+      background-image: url("../img/icon-facebook.svg");
+    }
   }
 
   &--youtub {
-    background-image: url("../img/icon-youtube.svg");
+    &::before {
+      background-image: url("../img/icon-youtube.svg");
+    }
   }
 
   &:hover {
@@ -36,5 +51,9 @@
 
   &:active {
     background-color: #5496bd;
+
+    &::before {
+      opacity: 0.3;
+    }
   }
 }

@@ -35,3 +35,15 @@ img {
     min-width: 1200px;
   }
 }
+
+input::placeholder,
+textarea::placeholder {
+  font-family: "PT Sans", "Arial", sans-serif;
+  color: @black;
+}
+
+.desktop-invisible {
+  @media (min-width: 1200px) {
+    display: none;
+  }
+}
