@@ -8,15 +8,27 @@
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 13px;
   }
 
   @media (min-width: @desktop-width) {
     grid-template-columns: 1fr 1fr 1fr;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 5px;
   }
 }
 
 .gallery__item {
-  background-color: @lightgrey;
+  position: relative;
+  padding-top: 22px;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+  min-height: 415px;
+  border-bottom: 1px solid #e5e5e5;
 
   &--wide {
     @media (min-width: @tablet-width) {
@@ -24,10 +36,21 @@
       grid-column-end: -1;
     }
   }
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    border-bottom: none;
+    min-height: 347px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 267px;
+  }
 }
 
 .gallery__image-wrapper {
   height: 280px;
+  background-color: @lightgrey;
 
   @media (min-width: @tablet-width) {
     height: 267px;
@@ -40,21 +63,75 @@
   }
 }
 
-.gallery__image-info {
+.gallery__image-bottom {
   font-size: 14px;
   line-height: 24px;
+
+  @media (min-width: @tablet-width) {
+    background-color: @grey;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    min-height: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 4px;
+    padding-bottom: 10px;
+    align-items: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: @white;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
 }
 
 .gallery__image-title {
   font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  margin-top: 10px;
+  margin-bottom: 1px;
 }
 
 .gallery__image-author {
   text-transform: none;
+  margin-top: 0;
+  margin-bottom: 5px;
 }
 
 .gallery__image-likes {
   font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  margin: 0;
+  padding-top: 5px;
+
+  @media (min-width: @tablet-width) {
+    min-width: 65px;
+  }
+}
+
+.gallery__image-like-icon {
+  width: 23px;
+  height: 21px;
+  margin-right: 10px;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 6px;
+  }
+
+  @media (min-width: @desktop-width) {
+    path {
+      fill: @white;
+      opacity: 1;
+    }
+  }
 }
 
 .gallery__image {
