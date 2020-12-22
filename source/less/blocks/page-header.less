@@ -38,25 +38,8 @@
     margin-left: -51px;
   }
 
-  &--desctop {
-    display: none;
-
-    @media (min-width: @desktop-width) {
-      display: block;
-    }
-  }
-
-  &--tablet {
-    display: none;
-
-    @media (min-width: @tablet-width) and (max-width: 1199px) {
-      display: block;
-    }
-  }
-
-  &--mobile {
-    @media (min-width: @tablet-width) {
-      display: none;
-    }
+  @media (min-width: @desktop-width) {
+    width: 187px;
+    height: 97px;
   }
 }
