@@ -44,23 +44,18 @@
   align-items: center;
 }
 
-
 .page-footer__copyright-link {
   display: block;
   margin-left: 12px;
   width: 27px;
   height: 34px;
+  color: @black;
 
-  &:hover .page-footer__copyright-icon {
-    path {
-      fill: @blue;
-    }
+  &:hover {
+    color: @blue;
   }
 
-  &:active .page-footer__copyright-icon {
-    path {
-      fill: @black;
-    }
+  &:active {
     opacity: 0.3;
   }
 }
