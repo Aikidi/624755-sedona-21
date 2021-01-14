@@ -12,7 +12,7 @@
 
 .form__group {
   border: none;
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid @form-group-border-color;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -62,7 +62,7 @@
       top: 40%;
       width: 19%;
       height: 1px;
-      background-color: #dbdbdb;
+      background-color: @line-color;
 
       @media (min-width: @desktop-width) {
         width: 280px;
@@ -80,7 +80,7 @@
       top: 40%;
       width: 19%;
       height: 1px;
-      background-color: #dbdbdb;
+      background-color: line-color;
 
       @media (min-width: @desktop-width) {
         width: 280px;
@@ -90,7 +90,7 @@
 }
 
 .form__field {
-  background-color: @grey;
+  background-color: @form-field-bkg-color;
   border: none;
   outline: none;
 
@@ -107,7 +107,14 @@
   padding-top: 5px;
 
   &:hover {
-    background-color: #e5e5e5;
+    background-color: @form-field-hover-bkg-color;
+  }
+
+  &:focus {
+    box-sizing: border-box;
+    outline: 4px solid @form-field-outline-color;
+    outline-offset: -4px;
+    background-color: @white;
   }
 }
 
@@ -138,19 +145,19 @@
     top: 2px;
     width: 56px;
     height: 56px;
-    background-color: @grey;
+    background-color: @form-field-bkg-color;
     border-radius: 50%;
   }
 
   &:hover {
     &::before {
-      background-color: #e5e5e5;
+      background-color: @form-field-hover-bkg-color;
     }
   }
 
   &:active {
     &::before {
-      background-color: #d5d5d5;
+      background-color: @input-active-bkg-color;
     }
   }
 }
@@ -162,7 +169,7 @@
   top: 19px;
   width: 21px;
   height: 21px;
-  background-color: #333333;
+  background-color: @radio-mark-bkg-color;
   border-radius: 50%;
 }
 
@@ -189,19 +196,19 @@
     top: 2px;
     width: 56px;
     height: 56px;
-    background-color: @grey;
+    background-color: @form-field-bkg-color;
     border-radius: 10%;
   }
 
   &:hover {
     &::before {
-      background-color: #e5e5e5;
+      background-color: @form-field-hover-bkg-color;
     }
   }
 
   &:active {
     &::before {
-      background-color: #d5d5d5;
+      background-color: @input-active-bkg-color;
     }
   }
 }
@@ -233,23 +240,6 @@
   @media (min-width: @tablet-width) {
     padding-top: 17px;
   }
-
-  &:focus {
-    box-sizing: border-box;
-    outline: 4px solid #e5e5e5;
-    outline-offset: -4px;
-    background-color: @white;
-  }
-}
-
-.form__field--tel {
-  &::before {
-    content: "";
-    position: absolute;
-    width: 158px;
-    height: 158px;
-    background-color: green;
-  }
 }
 
 .form__field-wrapper {
@@ -263,7 +253,7 @@
       top: 0;
       width: 58px;
       height: 58px;
-      background-color: #e6e6e6;
+      background-color: @form-field-icon-bkg-color;
       background-position: center;
       background-repeat: no-repeat;
       background-image: url("../img/phone.svg");
@@ -278,7 +268,7 @@
       top: 0;
       width: 58px;
       height: 58px;
-      background-color: #e6e6e6;
+      background-color: @form-field-icon-bkg-color;
       background-position: center;
       background-repeat: no-repeat;
       background-image: url("../img/mail.svg");
