@@ -1,4 +1,4 @@
-.video_preview {
+.video__preview {
   min-height: 192px;
 
   @media (min-width: @tablet-width) {
@@ -10,7 +10,7 @@
   }
 }
 
-.video_preview .preview__title {
+.video__preview .preview__title {
   margin-bottom: 28px;
 
   @media (min-width: @tablet-width) {
@@ -20,7 +20,7 @@
   }
 }
 
-.video_preview .preview__description {
+.video__preview .preview__description {
   line-height: 24px;
   margin-bottom: 0;
 }
@@ -46,7 +46,6 @@
 
 .video__wrapper {
   height: 201px;
-  background-color: @lightgrey;
 
   @media (min-width: @tablet-width) {
     min-height: 500px;
@@ -65,7 +64,7 @@
   width: 100%;
 
   @media (min-width: @tablet-width) {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: @scroll-bkg-color;
     bottom: 0;
     height: 93px;
   }
@@ -93,14 +92,14 @@
 .video__scroll {
   width: 100%;
   height: 45px;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: @scroll-bkg-color;
   position: relative;
 
   &::before {
     content: "";
     width: 84%;
     height: 3px;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: @scroll-line-color;
     position: absolute;
     top: 22px;
     left: 8%;
@@ -111,7 +110,7 @@
     width: 9px;
     height: 9px;
     border-radius: 50%;
-    background-color: #e7e5e5;
+    background-color: @scroll-point-color;
     position: absolute;
     top: 19px;
     left: 21%;
@@ -144,7 +143,7 @@
 
 .video__repeat {
   height: 66px;
-  background-color: @grey;
+  background-color: @tools-bkg-color;
   width: 50%;
   position: relative;
 
@@ -153,7 +152,7 @@
     position: absolute;
     width: 13px;
     height: 13px;
-    border: 2px solid #5c6870;
+    border: 2px solid @tool-color;
     border-left-color: transparent;
     border-radius: 50%;
     transform: rotate(45deg);
@@ -161,7 +160,7 @@
     left: 24px;
 
     @media (min-width: @tablet-width) {
-      border: 2px solid @white;
+      border: 2px solid @tool-tb-color;
       border-left-color: transparent;
     }
   }
@@ -171,25 +170,25 @@
     top: 23px;
     left: 29px;
     content: "";
-    border: 7px solid #5c6870;
+    border: 7px solid @tool-color;
     border-bottom-width: 0;
     border-left-width: 0;
     border-right-color: transparent;
     transform: rotate(-45deg);
 
     @media (min-width: @tablet-width) {
-      border-top-color: @white;
+      border-top-color: @tool-tb-color;
     }
   }
 
   &:hover {
     &::before {
-      border-color: @black;
+      border-color: @tool-hover-color;
       border-left-color: transparent;
     }
 
     &::after {
-      border-color: @black;
+      border-color: @tool-hover-color;
       border-right-color: transparent;
     }
   }
@@ -208,24 +207,24 @@
 
     &:hover {
       &::before {
-        border-color: rgba(255, 255, 255, 0.6);
+        border-color: @tool-tb-hover-color;
         border-left-color: transparent;
       }
 
       &::after {
-        border-color: rgba(255, 255, 255, 0.6);
+        border-color: @tool-tb-hover-color;
         border-right-color: transparent;
       }
     }
 
     &:active {
       &::before {
-        border-color: rgba(255, 255, 255, 0.3);
+        border-color: @tool-tb-active-color;
         border-left-color: transparent;
       }
 
       &::after {
-        border-color: rgba(255, 255, 255, 0.3);
+        border-color: @tool-tb-active-color;
         border-right-color: transparent;
       }
     }
@@ -236,7 +235,7 @@
   margin-top: 0;
   margin-bottom: 0;
   height: 66px;
-  background-color: @grey;
+  background-color: @tools-bkg-color;
   width: 50%;
   display: flex;
   justify-content: space-between;
@@ -255,25 +254,25 @@
   width: 20px;
   height: 20px;
   margin-left: 30px;
-  color: #5c6870;
+  color: @tool-color;
 
   &:hover {
-    color: #333333;
+    color: @tool-hover-color;
   }
 
   &:active {
-    color: rgba(51, 51, 51, 0.3);
+    color: @tool-active-color;
   }
 
   @media (min-width: @tablet-width) {
-    color: @white;
+    color: @tool-tb-color;
 
     &:hover {
-      color: rgba(255, 255, 255, 0.6);
+      color: @tool-tb-hover-color;
     }
 
     &:active {
-      color: rgba(255, 255, 255, 0.3);
+      color: @tool-tb-active-color;
     }
   }
 }
@@ -283,25 +282,25 @@
   width: 32px;
   height: 20px;
   margin-left: auto;
-  color: #5c6870;
+  color: @tool-color;
 
   &:hover {
-    color: #333333;
+    color: @tool-hover-color;
   }
 
   &:active {
-    color: rgba(51, 51, 51, 0.3);
+    color: @tool-active-color;
   }
 
   @media (min-width: @tablet-width) {
-    color: @white;
+    color: @tool-tb-color;
 
     &:hover {
-      color: rgba(255, 255, 255, 0.6);
+      color: @tool-tb-hover-color;
     }
 
     &:active {
-      color: rgba(255, 255, 255, 0.3);
+      color: @tool-tb-active-color;
     }
   }
 }

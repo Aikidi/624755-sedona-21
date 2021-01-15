@@ -28,7 +28,7 @@
   padding-right: 20px;
   box-sizing: border-box;
   min-height: 415px;
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid @gallery-item-border-color;
 
   &--wide {
     @media (min-width: @tablet-width) {
@@ -50,7 +50,6 @@
 
 .gallery__image-wrapper {
   height: 280px;
-  background-color: @lightgrey;
 
   @media (min-width: @tablet-width) {
     height: 267px;
@@ -68,7 +67,7 @@
   line-height: 24px;
 
   @media (min-width: @tablet-width) {
-    background-color: @grey;
+    background-color: @gallery-image-bottom-tb-bkg-color;
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
@@ -87,7 +86,7 @@
     left: 0;
     width: 100%;
     color: @white;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: @gallery-image-bottom-dt-bkg-color;
   }
 }
 
@@ -128,7 +127,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    fill: @white;
+    color: @white;
     opacity: 1;
   }
 }

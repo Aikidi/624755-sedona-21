@@ -4,12 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Форма отзыва</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page__body">
     <header class="page-header">
       <div class="content-wrapper">
-        <div class="header__top">
+        <div class="page-header__top">
           <nav class="main-nav main-nav--closed main-nav--nojs">
             <button class="main-nav__toggle" type="button">
               <span class="visually-hidden">Открыть меню</span>
@@ -75,7 +75,7 @@
               <div class="review-form__contacts-item">
                 <label class="form__label" for="tel"> <span class="desktop-invisible">Контактный&nbsp;</span> телефон*:</label>
                 <div class="form__field-wrapper form__field-wrapper--tel">
-                  <input class="form__field" type="tel" name="tel" id="tel" placeholder="Введите телефон">
+                  <input class="form__field" type="tel" name="tel" id="tel" placeholder="Введите телефон" pattern="[0-9]{11}">
                 </div>
               </div>
               <div class="review-form__contacts-item">
@@ -142,7 +142,7 @@
           </li>
         </ul>
         <div class="page-footer__copyright">Разработано
-          <a class="page-footer__copyright-link" href="https://htmlacademy.ru/">
+          <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
             <svg class="page-footer__copyright-icon" width="27" height="35" viewBox="0 0 27 35">
               <use xlink:href="img/sprite.svg#copyright-icon"></use>
             </svg>
@@ -150,6 +150,6 @@
         </div>
       </div>
     </footer>
-    <script src="js/main-nav.js"></script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>
