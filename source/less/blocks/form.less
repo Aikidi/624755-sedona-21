@@ -12,7 +12,7 @@
 
 .form__group {
   border: none;
-  border-bottom: 1px solid @form-group-border-color;
+  border-bottom: 1px solid @gray;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -90,7 +90,7 @@
 }
 
 .form__field {
-  background-color: @form-field-bkg-color;
+  background-color: @lightgray;
   border: none;
   outline: none;
 
@@ -107,12 +107,12 @@
   padding-top: 5px;
 
   &:hover {
-    background-color: @form-field-hover-bkg-color;
+    background-color: @gray;
   }
 
   &:focus {
     box-sizing: border-box;
-    outline: 4px solid @form-field-outline-color;
+    outline: 4px solid @gray;
     outline-offset: -4px;
     background-color: @white;
   }
@@ -145,13 +145,13 @@
     top: 2px;
     width: 56px;
     height: 56px;
-    background-color: @form-field-bkg-color;
+    background-color: @lightgray;
     border-radius: 50%;
   }
 
   &:hover {
     &::before {
-      background-color: @form-field-hover-bkg-color;
+      background-color: @gray;
     }
   }
 
@@ -169,7 +169,7 @@
   top: 19px;
   width: 21px;
   height: 21px;
-  background-color: @radio-mark-bkg-color;
+  background-color: @darkgrey;
   border-radius: 50%;
 }
 
@@ -196,13 +196,13 @@
     top: 2px;
     width: 56px;
     height: 56px;
-    background-color: @form-field-bkg-color;
+    background-color: @lightgray;
     border-radius: 10%;
   }
 
   &:hover {
     &::before {
-      background-color: @form-field-hover-bkg-color;
+      background-color: @gray;
     }
   }
 

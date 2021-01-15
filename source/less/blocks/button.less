@@ -1,8 +1,8 @@
 @import "../global/variables.less";
 
 .button {
-  color: @button-color;
-  background-color: @button-bkg-color;
+  color: @white;
+  background-color: @lightblue;
   border: none;
   padding: 15px;
   padding-bottom: 17px;
@@ -13,12 +13,12 @@
   font-family: "PT Sans", "Arial", sans-serif;
 
   &:hover {
-    background-color: @button-hover-bkg-color;
+    background-color: @blue;
   }
 
   &:active {
     outline: none;
-    background-color: @button-active-bkg-color;
+    background-color: @darkblue;
     color: @button-active-color;
   }
 
@@ -27,6 +27,6 @@
   }
 
   &:disabled {
-    background-color: @button-disabled-bkg-color;
+    background-color: @gray;
   }
 }
