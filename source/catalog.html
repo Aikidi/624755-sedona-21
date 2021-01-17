@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Фото и видео</title>
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/ptsans.woff" as="font">
+    <link rel="preload" href="fonts/ptsans.woff2" as="font">
   </head>
   <body class="page__body">
     <header class="page-header">
       <div class="content-wrapper">
         <div class="header__top">
-          <nav class="main-nav main-nav--closed main-nav--nojs">
+          <nav class="main-nav main-nav--nojs">
             <button class="main-nav__toggle" type="button">
               <span class="visually-hidden">Открыть меню</span>
             </button>
@@ -41,7 +43,10 @@
         </div>
         <div class="banner banner--inner-page">
           <div class="banner__content">
-            <img src="img/text-sedona.svg" width="460" height="350" alt="Главный баннер">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/sedona-desktop.svg">
+              <img src="img/sedona-tablet.svg" width="460" height="350" alt="Главный баннер">
+            </picture>
           </div>
         </div>
       </div>
@@ -51,7 +56,8 @@
         <h1 class="visually-hidden">Фото и видео</h1>
         <div class="preview page-main__preview">
           <p class="preview__title">Фото и видео</p>
-          <p class="preview__description">Не можете решиться на путешествие из-за курса?<br> Фотографии помогут вам забыть о политике и экономике.</p>
+          <p class="preview__description">Не можете решиться на путешествие из-за курса?<br>
+          Фотографии помогут вам забыть о политике и экономике.</p>
         </div>
       </div>
       <section class="photo">
@@ -85,7 +91,7 @@
                   </p>
                 </div>
               </li>
-              <li class="gallery__item image">
+              <li class="gallery__item">
                 <div class ="gallery__image-wrapper">
                   <a href="img/photo-2-desktop.jpg">
                     <picture>
@@ -111,7 +117,7 @@
                   </p>
                 </div>
               </li>
-              <li class="gallery__item image">
+              <li class="gallery__item">
                 <div class ="gallery__image-wrapper">
                   <a href="img/photo-3-desktop.jpg">
                     <picture>
@@ -137,7 +143,7 @@
                   </p>
                 </div>
               </li>
-              <li class="gallery__item image">
+              <li class="gallery__item">
                 <div class ="gallery__image-wrapper">
                   <a href="img/photo-4-desktop.jpg">
                     <picture>
