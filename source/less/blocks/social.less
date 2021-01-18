@@ -3,6 +3,7 @@
 .social {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
@@ -14,7 +15,7 @@
   display: block;
   width: 46px;
   height: 47px;
-  background-color: @social-link-color;
+  background-color: @lightblue;
   background-repeat: no-repeat;
   background-position: 50% 50%;
 
@@ -46,11 +47,11 @@
   }
 
   &:hover {
-    background-color: @social-link-hover-color;
+    background-color: @blue;
   }
 
   &:active {
-    background-color: @social-link-active-color;
+    background-color: @darkblue;
 
     &::before {
       opacity: 0.3;

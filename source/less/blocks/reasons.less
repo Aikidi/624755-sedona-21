@@ -1,23 +1,5 @@
 @import "../global/variables.less";
 
-.reasons__preview {
-  position: relative;
-
-  @media (max-width: @mobile-width) {
-    &::after {
-      content: "";
-      width: 100%;
-      height: 14px;
-      background-image: url("../img/blue-slice.svg");
-      background-repeat: no-repeat;
-      background-position: center;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-    }
-  }
-}
-
 .reasons__list {
   margin: 0;
   padding: 0;
@@ -28,5 +10,21 @@
   @media (min-width: @tablet-width) {
     flex-direction: row;
     flex-wrap: wrap;
+  }
+
+  position: relative;
+
+  @media (max-width: @tablet-width) {
+    &::before {
+      content: "";
+      width: 100%;
+      height: 37px;
+      background-color: @lightblue;
+      background-image: url("../img/white-copy.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      position: absolute;
+      top: -36px;
+    }
   }
 }
