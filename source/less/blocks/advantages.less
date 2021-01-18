@@ -32,6 +32,28 @@
   @media (min-width: @tablet-width) {
     order: 3;
   }
+
+  @media (max-width: 1199px) {
+    br {
+      display: none;
+    }
+  }
+}
+
+.advantages__item--house {
+  @media (max-width: 1199px) {
+    br {
+      display: none;
+    }
+  }
+}
+
+.advantages__item--food {
+  @media (max-width: @mobile-width) {
+    br {
+      display: none;
+    }
+  }
 }
 
 .advantages__title {
@@ -53,12 +75,6 @@
   margin: 0;
   font-size: 14px;
   line-height: 21px;
-
-  @media (max-width: 1199px) {
-    br {
-      display: none;
-    }
-  }
 }
 
 .advantages__icon {
