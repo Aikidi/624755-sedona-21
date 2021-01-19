@@ -73,7 +73,7 @@
 
 .reason--wide .reason__main {
   min-height: 191px;
-  padding-top: 39px;
+  padding-top: 41px;
   padding-bottom: 35px;
   padding-left: 10px;
   padding-right: 10px;
@@ -82,11 +82,23 @@
     width: 33.3%;
     padding-left: 30px;
     padding-right: 30px;
-    padding-top: 43px;
+    padding-top: 45px;
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 51px;
+    padding-top: 52px;
+  }
+}
+
+.reason--wide:first-child .reason__main {
+  padding-top: 35px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 41px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 48px;
   }
 }
 
